@@ -1,8 +1,10 @@
-class Pessoa {
+import 'dart:async';
+
+abstract class Pessoa {
   String ? nome;
   String ? sobrenome;
  
- get nomeCompletp => this.nome! + " " + this.sobrenome.toString();
 
-  Pessoa({this.nome, this.sobrenome});
+  Pessoa({this.nome, this.sobrenome,  required String nome, required String sobrenome});
+   : super( nome: nome, sobrenome: sobrenome);
 }

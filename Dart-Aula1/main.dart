@@ -1,10 +1,13 @@
-import 'pessoa.dart';
+import 'cartao.dart';
+import 'cliente.dart';
+import 'conta.dart';
 
 main(){
-  Pessoa Danilo = new Pessoa(
-    nome: "Danilo",
-    sobrenome: "Sacramento"
-  );
-  print("O sobrenome é ${Danilo.sobrenome}");
-  print("O nome completo é ${Danilo.nomeCompleto}");
+   var conta = Conta(
+    cliente: Cliente(nome: "Danilo", id:"12345" , sobrenome: "Sacramento", cpf: "01389060411" ),
+   
+    cartao: ,
+    faturas: ,
+   )
+   ;
 }
